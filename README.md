@@ -22,3 +22,15 @@
     Hedging Strategies: Helps traders construct delta/gamma/vega hedges.
     Arbitrage Opportunities: Detects inconsistencies between market prices and theoretical models.
     Volatility Trading: Traders can go long or short volatility based on surface shapes.
+
+## An Example:
+    Detecting mispriced options:
+    
+    Each option’s market price implies a volatility.
+    The volatility surface shows how IV varies across:
+    Moneyness (Strike price / Spot price)
+    Time to expiry
+    If a specific option’s implied volatility deviates from the smooth, expected surface, it may be mispriced.
+    Traders can then:
+    Sell options with unusually high IV (overpriced volatility)
+    Buy options with unusually low IV (underpriced volatility)
